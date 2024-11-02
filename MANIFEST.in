@@ -1,0 +1,4 @@
+global-exclude __pycache__
+recursive-include EasyFirebase/templatetags *
+prune EasyFirebase/templatetags/__pycache__
+recursive-exclude EasyFirebase/migrations *

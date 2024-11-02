@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: EasyFirebase
+Version: 1.0
+Summary: Easy Firebase-django integration.
+Home-page: UNKNOWN
+Author: Rubel H.
+Author-email: mail.rubel.me@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+Djanngo app for easy firebase integration.
+
