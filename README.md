@@ -8,13 +8,14 @@ If you do not want to upload your static files (ex: Image, pdf etc.) to the serv
 ## Usage
 
 ```python
-  from easyfirebase.fields import FirebaseImageField
+  from easyfirebase.fields import FirebaseImageField,FirebaseFileField
   from easyfirebase.storage import FirebaseStorage
 
   class MyModel(models.Model):
     name = models.CharField(max_length=100)
     #...
     photo = models.FirebaseImageField(storage=FirebaseStorage, ... )
+    file = models.FirebaseFileField(storage=FirebaseStorage, ... )
 ```
 
 If you do not provide any parameter for storage, then easyfirebase will use Default Django storage, which will store your image/pdf files in the local/server root dir or upload dir provided by STATIC_ROOT.
