@@ -42,17 +42,6 @@ add the app name in the `settings.py` of project.
     ]
 ```
 
-
-add the app name in the `settings.py` of project.
-
-```python
-  INSTALLED_APPS = [
-    ...
-    'EasyFirebase',
-    ...
-    ]
-```
-
 ## Configure Settings.py
 
 Get your firebase json config file and info from firebase console. Write the following code in your projects `settings.py` file:
