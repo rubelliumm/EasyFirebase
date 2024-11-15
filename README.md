@@ -51,4 +51,4 @@ Get your firebase json config file and info from firebase console. Write the fol
   )
 ```
 
-# Note: You must put your FIREBASE_CONFIG in `settings.py` and put your firebase sdk json file in the `BASE_DIR` of the project. ie, in the directory where `settings.py` resides.
+Note: You must put your FIREBASE_CONFIG in `settings.py` and put your firebase sdk json file in the `BASE_DIR` of the project. ie, in the directory where `settings.py` resides.
