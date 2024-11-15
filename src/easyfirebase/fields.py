@@ -89,9 +89,9 @@ class FirebaseFileField(models.FileField):
                         )
 
 
-class FirebaseImageFieldFile(_FirebaseFieldFile, ImageFieldFile):
+class _FirebaseImageFieldFile(_FirebaseFieldFile, ImageFieldFile):
     pass
 
 
 class FirebaseImageField(models.ImageField, FirebaseFileField):
-    attr_class = FirebaseImageFieldFile
+    attr_class = _FirebaseImageFieldFile
