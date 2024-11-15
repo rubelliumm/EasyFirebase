@@ -63,7 +63,7 @@ Get your firebase json config file and info from firebase console. Write the fol
   )
 ```
 
-[optional]
+[optional: `settings.py`]
 
 ```python
 FIREBASE_DEFAULT_UPLOAD_DIR = "test_dir"
