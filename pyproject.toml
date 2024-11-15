@@ -1,6 +1,6 @@
 [project]
 name = "easyfirebase"
-version = "2.0"
+version = "2.0.0"
 authors = [
   { name = "Md. Rubel H.", email = "mail.rubel.me@gmail.com" }
 ]
@@ -30,7 +30,7 @@ package-dir = { "" = "src" }
 
 # Define where your packages are, e.g., find_packages will look in 'src' directory
 packages = [
-    "EasyFirebase"
+    "easyfirebase"
 ]
 
 [build-system]

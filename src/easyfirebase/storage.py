@@ -28,11 +28,12 @@ class FirebaseStorage(Storage):
             name = os.path.join(default_folder, name)
         else:
             # adding project name as default dir.
-            project_name = getattr(settings, "BASE_DIR", None)
-            if project_name:
-                name = os.path.join(project_name, name)
+            project_dir = getattr(settings, "BASE_DIR", None)
+            if project_dir:
+                project_name = os.path.basename(project_dir)
             else:
-                name = os.path.join("FreeDjangoFirebase/", name)
+                project_name = "FreeDjangoFirebase"
+            name = os.path.join(project_name, name)
         bucket = self._get_bucket()
         blob = bucket.blob(name)
         blob.upload_from_file(content, content_type=content.content_type)
