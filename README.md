@@ -17,6 +17,7 @@ If you do not want to upload your static files (ex: Image, pdf etc.) to the serv
 
 If you do not provide any parameter for storage, then easyfirebase will use Default Django storage, which will store your image/pdf files in the local/server root dir or upload dir provided by STATIC_ROOT.
 
+
 ## Installation
 
 ```python
@@ -37,6 +38,17 @@ add the app name in the `settings.py` of project.
   INSTALLED_APPS = [
     ...
     'easyfirebase',
+    ...
+    ]
+```
+
+
+add the app name in the `settings.py` of project.
+
+```python
+  INSTALLED_APPS = [
+    ...
+    'EasyFirebase',
     ...
     ]
 ```
@@ -68,8 +80,8 @@ Get your firebase json config file and info from firebase console. Write the fol
 ```python
 FIREBASE_DEFAULT_UPLOAD_DIR = "test_dir"
 ```
-
 This will set the default upload directory for all FirebaseImageField instances in the Firebase Storage. If not provided, easyfirebase will first try to set the `Project_name` as the default upload dir in the Firebase Storage.
+
 or if the above also fails, `FreeDjangoFirebase/` will be the default upload dir.
 
 Note: You must put your FIREBASE_CONFIG in `settings.py` and put your firebase sdk json file in the `BASE_DIR` of the project. ie, in the directory where `settings.py` resides.
